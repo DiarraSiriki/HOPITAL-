@@ -1,31 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="CSS/nouscontacter.css">
-  <title>Nous-contacter</title>
+  <title>Nous Contacter - Hôpital+</title>
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header class="header">
     <div class="container">
-
-
       <div class="logo">
         <img src="IMAGES/logo-removebg-preview.png" alt="Hôpital+">
       </div>
       <nav class="navbar">
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="rendezvous.html">Rendez-vous</a></li>
+          <li><a href="rendezvous.html">Rendez-Vous</a></li>
           <li><a href="apropos.html">À propos</a></li>
-          <li><a href="nouscontacter.html">Nous contacter</a></li>
+          <li><a href="nouscontacter.html" class="active">Nous Contacter</a></li>
         </ul>
       </nav>
     </div>
   </header>
-</body>
 
+  <!-- HERO -->
+  <section class="contact-hero">
+    <h1>Nous contacter</h1>
+    <p>Une question ? Notre équipe vous répond dans les plus brefs délais.</p>
+  </section>
+
+  <!-- SECTION PRINCIPALE : 2 COLONNES -->
+  <section class="contact-main">
+
+    <!-- COLONNE GAUCHE : INFOS -->
+    <div class="contact-infos">
+      <h2>Informations de contacts</h2>
+      <p class="contact-intro">Nous sommes là pour vous contacter par téléphone, email ou vous rendre directement à l'Hôpital+.</p>
+
+      <ul class="contact-liste">
+        <li>
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Abidjan, Côte d'Ivoire</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <span>Téléphone :<br>+225 09 00 00 00 00</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email :<br>contact@hopital-plus.ci</span>
+        </li>
+      </ul>
+
+      <div class="horaires">
+        <h3>Horaires d'ouverture</h3>
+        <table>
+          <tr>
+            <td>Lundi - Vendredi</td>
+            <td>8h00 - 22h00</td>
+          </tr>
+          <tr>
+            <td>Samedi</td>
+            <td>8h30 - 20h00</td>
+          </tr>
+          <tr>
+            <td>Dimanche</td>
+            <td class="ferme">Fermé</td>
+          </tr>
+          <tr>
+            <td>Urgences</td>
+            <td class="urgence">24/24 - 7/7</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- COLONNE DROITE : FORMULAIRE -->
+    <div class="contact-form-container">
+      <h2>Envoyez un message</h2>
+      <form class="contact-form">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nom">Nom *</label>
+            <input type="text" id="nom" placeholder="Votre nom" required>
+          </div>
+          <div class="form-group">
+            <label for="prenom">Prénom *</label>
+            <input type="text" id="prenom" placeholder="Votre prénom" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" placeholder="votre@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="sujet">Sujet *</label>
+          <input type="text" id="sujet" placeholder="Sujet de votre message" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
+        </div>
+
+        <button type="submit" class="contact-submit">Envoyer le message</button>
+
+      </form>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="IMAGES/logo-removebg-preview.png" alt="Hôpital+">
+        <span>HÔPITAL+</span>
+      </div>
+      <div class="footer-links">
+        <span>Contacts</span>
+      </div>
+      <div class="footer-socials">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <hr>
+    <p class="footer-copy">&copy; 2026 Tous droits réservés - Hôpital+</p>
+  </footer>
+
+</body>
 </html>
