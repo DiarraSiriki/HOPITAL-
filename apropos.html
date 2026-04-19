@@ -1,31 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="CSS/apropos.css">
-  <title>À propos</title>
+  <title>À propos - Hôpital+</title><!-- ✅ accent ajouté -->
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header class="header">
     <div class="container">
-
-
       <div class="logo">
         <img src="IMAGES/logo-removebg-preview.png" alt="Hôpital+">
       </div>
       <nav class="navbar">
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="rendezvous.html">Rendez-vous</a></li>
-          <li><a href="apropos.html">À propos</a></li>
-          <li><a href="nouscontacter.html">Nous contacter</a></li>
+          <li><a href="rendez-vous.html">Rendez-Vous</a></li><!-- ✅ lien corrigé -->
+          <li><a href="a-propos.html" class="active">À propos</a></li><!-- ✅ lien + active corrigés -->
+          <li><a href="nous-contacter.html">Nous Contacter</a></li>
         </ul>
       </nav>
     </div>
   </header>
-</body>
 
+  <!-- SECTION HERO À PROPOS -->
+  <section class="apropos-hero">
+    <div class="apropos-texte">
+      <h1>Votre bien est notre préoccupation</h1><!-- ✅ singulier corrigé -->
+      <p>Nous nous engageons à offrir des soins médicaux de haute qualité à toute la population, avec humanité et excellence.</p><!-- ✅ majuscule + double espace corrigés -->
+      <a href="#mission" class="apropos-btn">Découvrir notre Mission</a><!-- ✅ double espace supprimé -->
+    </div>
+    <div class="apropos-image">
+      <img src="IMAGES/responsable.png" alt="Médecin Hôpital+">
+    </div>
+  </section>
+
+  <!-- SECTION MISSION -->
+  <section class="mission" id="mission">
+    <div class="mission-container">
+      <div class="mission-card">
+        <i class="fa-solid fa-heart"></i>
+        <h3>L”Empathie au coeur</h3>
+        <p>Chaque patient est une histoire unique. Nous traitons des individus, pas seulement des symptomes, avec une dignité inébranlabre</p>
+        <a href="">Patient frist</a>
+      </div>
+      <div class="mission-card">
+        <i class="fa-brands fa-searchengin"></i>
+        <h3>Innovation continue</h3>
+        <p>Repousser les limites de ce qui est posible grace a la recherche</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION ÉQUIPE -->
+  <section class="equipe">
+    <h2>L'Elite Médicale</h2>
+    <p>Des experts médicaux unis pour une vision commune</p>
+    <div class="equipe-container">
+      <div class="equipe-card">
+        <img src="IMAGES/churigien.png" alt="Dr. Koné">
+        <h3>Dr. Koffi Koaudio</h3>
+        <span>Churigien</span>
+      </div>
+      <div class="equipe-card">
+        <img src="IMAGES/generaliste.png" alt="Dr. Diallo">
+        <h3>Dr. Yao N'guessan</h3>
+        <span>Géneraliste</span>
+      </div>
+    </div>
+    <div class="equipe-container">
+      <div class="equipe-card">
+        <img src="IMAGES/ophtamologue.png" alt="Dr. Koné">
+        <h3>Dr. Brou Aka</h3>
+        <span>Ophtamologue</span>
+      </div>
+      <div class="equipe-card">
+        <img src="IMAGES/pediatre.png" alt="Dr. Diallo">
+        <h3>Dr. Aissata Koné</h3>
+        <span>Pédiatre</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="IMAGES/logo-removebg-preview.png" alt="Hôpital+">
+        <span>HÔPITAL+</span>
+      </div>
+      <div class="footer-links">
+        <span>Contacts</span>
+      </div>
+      <div class="footer-socials">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <hr>
+    <p class="footer-copy">&copy; 2026 Tous droits réservés - Hôpital+</p>
+  </footer>
+
+</body>
 </html>

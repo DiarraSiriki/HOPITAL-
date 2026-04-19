@@ -1,31 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="CSS/rendezvous.css">
-  <title>Rendez-vous</title>
+  <title>Rendez-vous - Hôpital+</title>
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header class="header">
     <div class="container">
-
-
       <div class="logo">
         <img src="IMAGES/logo-removebg-preview.png" alt="Hôpital+">
       </div>
       <nav class="navbar">
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="rendezvous.html">Rendez-vous</a></li>
+          <li><a href="rendezvous.html" class="active">Rendez-Vous</a></li>
           <li><a href="apropos.html">À propos</a></li>
-          <li><a href="nouscontacter.html">Nous contacter</a></li>
+          <li><a href="nous-contacter.html">Nous Contacter</a></li>
         </ul>
       </nav>
     </div>
   </header>
-</body>
 
+  <!-- HERO -->
+  <section class="rdv-hero">
+    <h1>Prendre un rendez-vous</h1>
+    <p>Remplissez le formulaire ci-dessous, notre équipe vous confirmera rapidement.</p>
+  </section>
+
+  <!-- SECTION PRINCIPALE : 2 COLONNES -->
+  <section class="rdv-main">
+
+    <!-- COLONNE GAUCHE : FORMULAIRE -->
+    <div class="rdv-form-container">
+      <h2>Formulaire de rendez-vous</h2>
+      <form class="rdv-form">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nom">Nom *</label>
+            <input type="text" id="nom" placeholder="Votre nom" required>
+          </div>
+          <div class="form-group">
+            <label for="prenom">Prénom *</label>
+            <input type="text" id="prenom" placeholder="Votre prénom" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" placeholder="votre@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tel">Téléphone *</label>
+          <input type="tel" id="tel" placeholder="+225 07 00 00 00 00" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="specialite">Spécialité *</label>
+            <select id="specialite" required>
+              <option value="" disabled selected>Choisir</option>
+              <option value="cardiologie">Cardiologie</option>
+              <option value="neurologie">Neurologie</option>
+              <option value="pediatrie">Pédiatrie</option>
+              <option value="orthopedie">Orthopédie</option>
+              <option value="ophtalmologie">Ophtalmologie</option>
+              <option value="medecine-generale">Médecine générale</option>
+              <option value="dermatologie">Dermatologie</option>
+              <option value="orl">ORL</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="medecin">Médecin</label>
+            <select id="medecin">
+              <option value="" disabled selected>Choisir</option>
+              <option value="dr-koné">Dr. Koné</option>
+              <option value="dr-diallo">Dr. Diallo</option>
+              <option value="dr-bamba">Dr. Bamba</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Date souhaitée *</label>
+            <input type="date" id="date" required>
+          </div>
+          <div class="form-group">
+            <label for="heure">Créneau préféré</label>
+            <input type="time" id="heure">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="motif">Motif de consultation</label>
+          <textarea id="motif" rows="3" placeholder="Décrivez brièvement votre motif..."></textarea>
+        </div>
+
+        <button type="submit" class="rdv-submit">
+          Confirmation de la demande de rendez-vous
+        </button>
+
+      </form>
+    </div>
+
+    <!-- COLONNE DROITE : INFOS -->
+    <div class="rdv-info">
+
+      <!-- Comment ça marche -->
+      <div class="info-card">
+        <h3><i class="fa-solid fa-circle-question"></i> Comment ça marche ?</h3>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Remplissez le formulaire en ligne</li>
+          <li><i class="fa-solid fa-check"></i> Notre équipe traite votre demande</li>
+          <li><i class="fa-solid fa-check"></i> Confirmation par SMS ou email</li>
+          <li><i class="fa-solid fa-check"></i> Présentez-vous à l'heure indiquée</li>
+        </ul>
+      </div>
+
+      <!-- Documents à apporter -->
+      <div class="info-card">
+        <h3><i class="fa-solid fa-file-medical"></i> Documents à apporter</h3>
+        <ul>
+          <li><i class="fa-solid fa-circle-dot"></i> Carte CMU</li>
+          <li><i class="fa-solid fa-circle-dot"></i> Ordonnance</li>
+          <li><i class="fa-solid fa-circle-dot"></i> Résultats des examens antérieurs</li>
+        </ul>
+      </div>
+
+      <!-- Urgences -->
+      <div class="info-card urgence">
+        <h3><i class="fa-solid fa-triangle-exclamation"></i> Urgences</h3>
+        <p>En cas d'urgence médicale, ne passez pas par le formulaire. Appelez directement le SAMU.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="IMAGES/logo-removebg-preview.png" alt="Hôpital+">
+        <span>HÔPITAL+</span>
+      </div>
+      <div class="footer-links">
+        <span>Contacts</span>
+      </div>
+      <div class="footer-socials">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <hr>
+    <p class="footer-copy">&copy; 2026 Tous droits réservés - Hôpital+</p>
+  </footer>
+
+</body>
 </html>
