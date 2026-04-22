@@ -78,7 +78,7 @@
 .bgimg {
   position: relative;
   z-index: 3;
-  /* color: white; */
+  color: white;
   text-align: center;
 }
 
@@ -88,11 +88,12 @@
 }
 
 .bgimg p {
+ 
   max-width: 600px;
   margin-bottom: 30px;
   font-size: 1.2rem;
   line-height: 1.5;
-  color: #d0e4ef;
+ 
   
 }
 
@@ -115,7 +116,7 @@
 
 .rdv{
   background-color: #ffffff;
-  color: #2c3e50;
+   color:  #1dcdf9;
 }
 
 
@@ -186,7 +187,7 @@
 
 .specialite > p {
   font-size: 1.1rem;
-  color: #1DCDF9;
+  color: #bed1e3;
   margin-bottom: 50px;
 }
 
@@ -217,6 +218,7 @@
   display: block;
   margin-bottom: 15px;
   filter: grayscale(30%);
+  color: #bed1e3;
 }
 
 .specialite-item h3 {
@@ -268,9 +270,33 @@
   color: white;
 }
 
+/* URGENCE */
+.urgence {
+  background-color: rgb(10, 64, 99);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.urgence div {
+  margin-bottom: 40px;
+}
+
+.urgence h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.urgence p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
 /* FOOTER */
 .footer {
-  background-color: #0a2e48;
+  background-color: rgb(6, 29, 44);
   color: white;
   padding: 30px 40px 20px;
 }
@@ -292,7 +318,7 @@
 
 .footer-logo img {
   height: 50px;
-  filter: brightness(0) invert(1);
+  
 }
 
 .footer-logo span {
