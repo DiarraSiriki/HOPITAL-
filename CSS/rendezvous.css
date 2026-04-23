@@ -65,6 +65,7 @@
 
 /* SECTION PRINCIPALE */
 .rdv-main {
+ 
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -72,6 +73,7 @@
   margin: 50px auto;
   padding: 0 20px;
   align-items: start;
+  
 }
 
 /* FORMULAIRE */
@@ -219,10 +221,9 @@
 
 /* FOOTER */
 .footer {
-  background-color: #0a2e48;
+  background-color: rgb(6, 29, 44);
   color: white;
   padding: 30px 40px 20px;
-  margin-top: 60px;
 }
 
 .footer-container {
@@ -268,11 +269,11 @@
 }
 
 .footer-socials a:hover {
-  color: #1dcdf9;
+  color: #1DCDF9;
 }
 
 .footer hr {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255,255,255,0.2);
   margin-bottom: 15px;
 }
 
