@@ -87,8 +87,8 @@
 .apropos-image img {
   width: 100%;
   border-radius: 12px;
-  object-fit: cover;
-  max-height: 500px;
+  /* object-fit: cover; */
+  /* max-height: 500px; */
 }
 
 /* MISSION */
@@ -105,11 +105,19 @@
   max-width: 1000px;
   margin: 0 auto;
 }
-
-.mission-card {
-  background-color: #f4f8fb;
+.mission-card1 {
+  background-color:#F0F4F8;
+    /* background-color: #f4f8fb; */
   border-radius: 12px;
-  padding: 35px 25px;
+  padding: 25px 15px;
+  border: 1px solid #bbcbd3;
+  transition: transform 0.3s;
+}
+.mission-card {
+  background-color: #1dcdf9;
+  /* background-color: #f4f8fb; */
+  border-radius: 12px;
+  padding: 35px 15px;
   border: 1px solid #d0e4ef;
   transition: transform 0.3s;
 }
@@ -137,12 +145,12 @@
   line-height: 1.6;
 }
 
-.mission-card a{
+.mission-card1 a{
   font-size: 0.95rem;
-  color: #fff;
+  color: #1dcdf9;
   line-height: 1.6;
   text-decoration: none;
-  background-color: #1dcdf9;
+  background-color: #fff;
   padding: 5px;
   border-radius: 20px;
 }
@@ -161,7 +169,7 @@
 }
 
 .equipe > p {
-  color: #1dcdf9;
+  color:#555;
   margin-bottom: 40px;
   font-size: 1rem;
 }

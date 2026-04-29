@@ -178,6 +178,10 @@
   padding: 60px 20px;
   text-align: center;
 }
+.specialite a{
+  text-decoration: none;
+  color: inherit;
+}
 
 .specialite h2 {
   font-size: 2.5rem;
