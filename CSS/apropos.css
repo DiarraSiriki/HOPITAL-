@@ -109,7 +109,7 @@
   background-color:#F0F4F8;
     /* background-color: #f4f8fb; */
   border-radius: 12px;
-  padding: 25px 15px;
+  padding: 50px 25px;
   border: 1px solid #bbcbd3;
   transition: transform 0.3s;
 }
@@ -117,7 +117,7 @@
   background-color: #1dcdf9;
   /* background-color: #f4f8fb; */
   border-radius: 12px;
-  padding: 35px 15px;
+  padding: 50px 25px;
   border: 1px solid #d0e4ef;
   transition: transform 0.3s;
 }
@@ -134,14 +134,14 @@
 
 .mission-card h3 {
   font-size: 1.2rem;
-  color: #0d3b5e;
+  color: #ffffff;
   margin-bottom: 12px;
   font-weight: 600;
 }
 
 .mission-card p {
   font-size: 0.95rem;
-  color: #555;
+  color: #fffff0;
   line-height: 1.6;
 }
 
@@ -151,8 +151,9 @@
   line-height: 1.6;
   text-decoration: none;
   background-color: #fff;
-  padding: 5px;
-  border-radius: 20px;
+  padding:10px 20px;
+  border-radius: 10px;
+  /* transform: translateY(50px); */
 }
 
 /* ÉQUIPE */
